@@ -1,0 +1,465 @@
+
+@font-face {
+    font-family: "fuente1";
+    src: url(./fonts/Roboto/Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: 'fuente2';
+    src: url(./fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'fuente3';
+    src: url(./fonts/Roboto/Roboto-Light.ttf);
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 150px;
+}
+
+/*nav*/
+
+.navbar {
+    width: 100%;
+    height: 10%;
+    border-bottom: 1px solid #059245;
+    background: linear-gradient(#e7eeea, #92eebc);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.logo{
+padding-left: 5%;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+
+.lista-nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.lista-nav li {
+    list-style: none;
+    transition: 1s;
+}
+
+.lista-nav li:hover {
+    transform: scale(1.2);
+ }
+
+ .lista-nav a {
+    text-decoration: none;
+    font-family: "fuente2";
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #156f3e;
+ }
+
+ .lista-nav a:hover {
+    color: #032e17;
+ }
+
+
+ @media (max-width: 550px) {
+    .lista-nav a {
+        font-size: 12px;
+    }
+ }
+
+ @media (max-width: 370px) {
+    .lista-nav a {
+        font-size: 10px;
+    }
+ }
+
+  /* titulo principal*/
+
+ .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .container h1 {
+    margin: 0 0 50px 0;
+    padding: 5% 0 0 0;
+    font-family: "fuente1";
+    font-size: 4em;
+    color: #156f3e;
+ }
+
+ @media (max-width: 600px) {
+    .container h1 {
+        font-size: 2.5em;
+    }
+ }
+ @media (max-width: 350px) {
+    .container h1 {
+        font-size: 2em;
+    }
+ }
+
+ .container h3 {
+    margin: 0;
+    padding: 0;
+    font-family: "fuente3";
+    font-size: 1.2em;
+    color: #059245;
+ }
+
+    /* parrafos preguntas*/
+
+ .cont-parrafo {
+    padding-top: 5%;
+    border-bottom: 1px solid #156f3e;
+ }
+
+ .cont-parrafo h4 {
+    margin-left: 2%;
+    font-family: "fuente3";
+    text-decoration: underline;
+    font-weight: 400;
+    font-size: 1.5em;
+    color: #156f3e;
+ }
+
+ .cont-parrafo  p {
+    margin-left: 5%;
+    color: #059245;
+    font-family: "fuente3";
+    font-weight: 400;
+    font-size: 1.3em;
+ }
+
+   /*section instalaciones*/
+
+.section-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    width: 100%;
+}
+
+.title {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-container h2 {
+    font-family: "fuente1";
+    font-size: 2.3em;
+    color: #156f3e;
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .section-container h2 {
+        font-size: 2em;
+    }
+}
+@media (max-width: 394px) {
+    .section-container h2 {
+        font-size: 1.5em;
+    }
+}
+
+.section {
+    width: 100%;
+    padding-bottom: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contain-cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+
+.contain-cards h4 {
+    color: #156f3e;
+    font-family: "fuente1";
+    font-size: 25px;
+    margin: 0;
+    padding: 10px 0 20px 0;
+}
+
+@media (max-width: 600px) {
+    .contain-cards h4 {
+        font-size: 20px;
+    }
+}
+
+.card {
+    width: 25%;
+    height: 300px;
+    background-color:#bee9d2;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0.2 0.2 300px;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 1000px) {
+    .contain-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 320px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 400px) {
+    .card {
+        width: 250px;
+        margin-bottom: 50px;
+    }
+}
+
+.cards-img {
+    width: 85%;
+    height: 200px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card:first-child .cards-img{
+    background-image: url(./img/gimnasio.jpg);
+}
+
+ 
+.card:nth-child(2) .cards-img {
+    background-image: url(./img/fSPA.jpg);
+}
+
+.card:nth-child(3) .cards-img {
+    background-image: url(./img/fSauna.jpg);
+}
+
+
+    /*section tratamientos*/
+
+.card1 {
+    width: 25%;
+    height: 300px;
+    background-color:#bee9d2;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0.2 0.2 300px;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 1000px) {
+    .card1 {
+        width: 320px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 400px) {
+    .card1 {
+        width: 250px;
+        margin-bottom: 50px;
+    }
+}
+
+.card1:first-child .cards-img{
+    background-image: url(./img/aortomolecular.jpg);
+}
+
+.card1:nth-child(2) .cards-img {
+    background-image: url(./img/Dieta-ayurveda.jpg);
+}
+
+.card1:nth-child(3) .cards-img {
+    background-image: url(./img/areiki.webp);
+}
+
+
+/*section productos*/
+
+.card2 {
+    width: 25%;
+    height: 300px;
+    background-color:#bee9d2;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0.2 0.2 300px;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 1000px) {
+    .card2 {
+        width: 320px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 400px) {
+    .card2 {
+        width: 250px;
+        margin-bottom: 50px;
+    }
+}
+
+.card2:first-child .cards-img {
+    background-image: url(./img/vhumo.jpg);
+}
+
+.card2:nth-child(2) .cards-img {
+    background-image: url(./img/velas.jpg);
+}
+
+.card2:nth-child(3) .cards-img {
+    background-image: url(./img/sahumerios.jpg);
+}
+
+.contain-a {
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.contain-a div {
+    width: 200px;
+    height: 35px;
+    background-color: #156f3e;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+}
+
+.contain-a div:hover {
+    transform: scale(1.2);
+    background-color: #059245;
+}
+
+.contain-a a {
+      font-family: "fuente3";
+      text-decoration: none;
+      color: #daf0e4;
+      font-size: 25px;
+}
+
+.footer {
+    width: 100%;
+    background: linear-gradient(#e7eeea, #92eebc);
+}
+
+.contain-h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contain-h3 h3 {
+    color: #156f3e;
+    font-size: 2.5em;
+    font-family: "fuente1";
+    text-decoration: underline;
+}
+
+.contain-info-red {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info-contact {
+    width: 33%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-redes {
+    width: 33%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info-contact p {
+    color: #059245;
+    font-family: "fuente2";
+    font-size: 20px;
+}
+
+.info-redes i {
+    color: #156f3e;
+    font-size: 40px;
+}
+
+@media (max-width: 660px) {
+    .contain-info-red {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .info-contact p{
+        font-size: 15px;
+    }
+}
+@media (max-width: 500px) {
+    .contain-h3 h3 {
+        font-size: 1.5em;
+    }
+    .info-contact p {
+        font-size: 10px;
+    }
+    .info-redes i{
+        font-size: 20px;
+    }
+}

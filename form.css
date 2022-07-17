@@ -1,0 +1,179 @@
+@font-face {
+    font-family: "fuente1";
+    src: url(./fonts/Roboto/Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: 'fuente2';
+    src: url(./fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'fuente3';
+    src: url(./fonts/Roboto/Roboto-Light.ttf);
+}
+
+body{
+    background-color: #c8f3db;
+}
+
+
+/* formulario registro */
+
+.contain-formularios {
+    width: 95%;
+    padding-bottom: 3%;
+    margin-top: 5%;
+    margin-left: 3%;
+    border-radius: 25px;
+    border: 2px solid #059245;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img {
+    width: 10%;
+    height: 150px;
+    margin-top: 50px;
+}
+
+.formularios {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.formularios h3 {
+    font-family: "fuente1";
+    font-size: 2em;
+    color: #156f3e;
+}
+
+.forms {
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    font-family: "fuente2";
+    color:#156f3e;
+}
+
+.formulario input {
+    height: 25px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #92eebc;
+}
+
+.check {
+    font-size: 14px;
+}
+.enviar {
+    padding-top: 25px;
+justify-content: center;
+text-align: center;
+transition: 0.5s;
+}
+
+.enviar:hover {
+    transform: scale(1.2);
+}
+
+.enviar input {
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    height: 25px;
+    background-color: #059245;
+    font-family: "fuente3";
+    font-size: 18px;
+    color: antiquewhite;
+    cursor: pointer;
+}
+
+    /* formulario login*/
+
+    .formulario a {
+        margin-left: 100px;
+        text-decoration: none;
+        color: #059245;
+        font-family: "fuente3";
+        font-size: 12px;
+        margin-top: 35px;
+    }
+    .formulario a:hover {
+        text-decoration: underline;
+    }
+
+    .ingreso {
+        width: 150px;
+        height: 25px;
+        margin-top: 25px;
+        background-color: #059245;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        transition: 0.5s;
+    }
+    .ingreso:hover{
+        transform: scale(1.2);
+    }
+
+    .ingreso a {
+        font-family: "fuente3";
+        text-decoration: none;
+        font-size: 18px;
+        color: antiquewhite;
+        
+    }
+
+   
+
+    @media (max-width: 700px) {
+        .formularios h3 {
+            font-size: 1.1em;
+        }
+    }
+
+@media (max-width: 670px) {
+    .formularios {
+        flex-direction: column-reverse;
+    }
+    .formularios h3 {
+        font-size: 1.3em;
+    }
+    .img {
+        margin-right: 35px;
+    }
+}
+
+@media (max-width: 588px) {
+    .datos {
+        display: flex;
+        flex-direction: column;
+    }
+    .img {
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 460px) {
+    .formulario a {
+        font-size: 9px;
+        margin: 0;
+        padding: 0;
+    }
+}
